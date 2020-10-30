@@ -2,13 +2,14 @@
 if(isset($_GET['lat']) && isset($_GET['lon'])) {
     echo "Ok<br>";
     echo "lat:".$_GET['lat'] . "   lon:" . $_GET['lon'] . "<br>";
-    echo "Repeat35s  sdsd";
-    
+    echo "Repeat 5s";
+
     $conexion = pg_connect("host=ec2-34-234-185-150.compute-1.amazonaws.com dbname=d212b7tb07aa7e user=iqxlvrecdwtpye password=0a1efa1914fdc940758ab64d009da5af3be3c8f863e5d9ad7c9674278479d2d4");
     echo "se realizo la conexion <br>";
-    $datos = array('latitud' => $_GET['lat'], 'longitud' => $GET['lon'], 'fecha' => new date(now));
+
+    $datos = array('latitud' => $_GET['lat'], 'longitud' => $_GET['lon'], 'fecha' => date_format(new DateTime("now"),"Y-m-d h:m:s"));
     print_r($datos);
-    $insertar = pg_insert($conexion, 'coordenadas', $_GET);
+    $insertar = pg_insert($conexion, 'coordenadas', $datos);
     if($insertar) {
         echo "datos insertados correctamente";
     } else {
