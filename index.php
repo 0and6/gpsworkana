@@ -11,6 +11,7 @@ if(isset($_GET['lat']) && isset($_GET['lon'])) {
     print_r($datos);
     $insertar = pg_insert($conexion, 'coordenadas', $datos);
     if($insertar) {
+        echo "apagar";
         echo "datos insertados correctamente";
     } else {
         echo "fallo al insertar";
