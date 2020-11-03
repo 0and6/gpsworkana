@@ -1,8 +1,6 @@
 <?php
 if(isset($_GET['lat']) && isset($_GET['lon'])) {
-    //
-    
-    echo "apagar 04";
+    //echo "apagar 04";
     //echo "Ok<br>";
     //echo "lat:".$_GET['lat'] . "   lon:" . $_GET['lon'] . "<br>";
     //echo "Repeat 5s";
