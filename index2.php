@@ -1,6 +1,7 @@
 <?php
 if(isset($_POST['lat']) && isset($_POST['lon'])) {
     echo "Ok<br>";
+    /*
     echo "lat:".$_POST['lat'] . "   lon:" . $_POST['lon'] . "<br>";
     echo "Repeat 5s";
 
@@ -14,7 +15,7 @@ if(isset($_POST['lat']) && isset($_POST['lon'])) {
         echo "datos insertados correctamente";
     } else {
         echo "fallo al insertar";
-    }
+    }*/
 
 
 } else {
