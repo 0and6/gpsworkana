@@ -1,7 +1,7 @@
 <?php
 if(isset($_POST['lat']) && isset($_POST['lon'])) {
     //echo "Ok<br>";
-    echo "apagar 03";
+    //echo "apagar 03";
     //echo "lat:".$_POST['lat'] . "   lon:" . $_POST['lon'] . "<br>";
     //echo "Repeat 5s";
 
